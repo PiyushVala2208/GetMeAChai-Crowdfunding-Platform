@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ☕ Get Me A Chai - Modern Crowdfunding Platform
 
-## Getting Started
+**Get Me A Chai** ek Next.js based platform hai jo creators ko unke fans se directly support (Chai/Donations) lene mein madad karta hai. Isme smooth animations, secure payments, aur ek powerful creator dashboard hai.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🌟 Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Premium UI/UX:** Tailwind CSS aur Framer Motion ka use karke buttery smooth animations aur dark-themed design banaya gaya hai.
+* **Buttery Scrolling:** Lenis Scroll integration ke saath ek premium browsing experience milta hai.
+* **Creator Dashboard:** Creators apni profile edit kar sakte hain aur apni Razorpay details manage kar sakte hain.
+* **Secure Payments:** Razorpay integration ke saath 100% secure INR payments support karta hai.
+* **Personalized Profiles:** Har user ki apni ek unique public profile hoti hai jahan supporters unhe message ke saath donate kar sakte hain.
+* **Supporter History:** Har profile par top 5 recent supporters ki list dikhti hai.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Category | Technology |
+| :--- | :--- |
+| **Framework** | Next.js 15 (App Router) |
+| **Styling** | Tailwind CSS |
+| **Animations** | Framer Motion |
+| **Scrolling** | Lenis Scroll |
+| **Database** | MongoDB with Mongoose |
+| **Auth** | NextAuth.js (Google/GitHub) |
+| **Payments** | Razorpay SDK |
+| **Forms** | React Hook Form |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Quick Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.  **Repo Clone Karein:**
+    ```bash
+    git clone [https://github.com/your-username/GetMeAChai-Crowdfunding-Platform.git](https://github.com/your-username/GetMeAChai-Crowdfunding-Platform.git)
+    cd GetMeAChai-Crowdfunding-Platform
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Dependencies Install Karein:**
+    ```bash
+    npm install
+    ```
+
+3.  **Environment Variables (.env.local):**
+    ```env
+    NEXTAUTH_URL=http://localhost:3000
+    NEXTAUTH_SECRET=your_secret
+    MONGODB_URI=your_mongodb_url
+    GITHUB_ID=your_id
+    GITHUB_SECRET=your_secret
+    NEXT_PUBLIC_KEY_ID=your_razorpay_key
+    KEY_SECRET=your_razorpay_secret
+    ```
+
+4.  **Project Start Karein:**
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 📸 Project Structure
+
+* `/app`: Saare pages aur routing (Dashboard, Profile, API).
+* `/components`: Reusable UI elements jaise PaymentPage, Navbar, etc.
+* `/models`: MongoDB schemas (User, Payment).
+* `/actions`: Server actions database handle karne ke liye.
+
+---
+
+## 🤝 Contributing
+Agar aapko koi bug milta hai ya koi naya feature suggest karna chahte hain, toh be-jhijhak Issue open karein ya Pull Request bhejein!
+
+---
+
+**Developed with ❤️ by [Piyush Vala](https://github.com/PiyushVala2028)**
