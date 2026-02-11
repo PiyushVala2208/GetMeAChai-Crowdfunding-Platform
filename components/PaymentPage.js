@@ -90,9 +90,10 @@ const PaymentPage = ({ username }) => {
   const handleChange = (e) => {
     setPaymentform({ ...paymentform, [e.target.name]: e.target.value })
   }
-
-  const pay = async (amount) => {
-    let a = await initiate(amount, username, paymentform)
+  // Function signature change karo taaki ye data accept kare
+  const pay = async (amount, formData) => {
+    // paymentform ki jagah formData use karo jo react-hook-form se aa raha hai
+    let a = await initiate(amount, username, formData)
     let orderId = a.id
     const rzpKey = currentUser.razorpayid || process.env.NEXT_PUBLIC_KEY_ID;
 
@@ -105,7 +106,7 @@ const PaymentPage = ({ username }) => {
       "image": currentUser.profilepic || "/logo.png",
       "order_id": orderId,
       "callback_url": `${window.location.origin}/api/razorpay`,
-      "prefill": { "name": paymentform.name || "Anonymous" },
+      "prefill": { "name": formData.name || "Anonymous" }, // Yahan bhi formData
       "theme": { "color": "#facc15" }
     }
 
