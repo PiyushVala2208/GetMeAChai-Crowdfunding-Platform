@@ -131,7 +131,8 @@ const PaymentPage = ({ username }) => {
         <div className="w-full h-64 md:h-96 overflow-hidden">
           <img
             className='object-cover w-full h-full shadow-2xl'
-            src={currentUser.coverpic || "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=2070"}
+            // src={currentUser.coverpic || "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=2070"}
+            src='/patreon_banner.gif'
             alt="cover"
           />
         </div>
@@ -147,7 +148,8 @@ const PaymentPage = ({ username }) => {
             <div className="bg-[#00091d] rounded-full p-1">
               <img
                 className='rounded-full object-cover size-32 md:size-40 border-2 border-white/10'
-                src={currentUser.profilepic || "/avatar.gif"}
+                // src={currentUser.profilepic || "/avatar.gif"}
+                src='/Flaming_Sphere.gif'
                 alt="profile"
               />
             </div>
