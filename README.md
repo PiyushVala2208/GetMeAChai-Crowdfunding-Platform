@@ -116,7 +116,4 @@ Your contributions help improve the project for everyone.
 Developed with ❤️ by  
 **Piyush Vala**
 
-GitHub:  
-https://github.com/PiyushVala2028
-
 ---
