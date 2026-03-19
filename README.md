@@ -1,4 +1,4 @@
-# ☕ Get Me A Chai – Modern Crowdfunding Platform
+# ☕ Get Me A Chai – Modern Crowdfunding Platform 
 
 **Get Me A Chai** is a modern **Next.js-based crowdfunding platform** that enables creators to receive direct support (Chai/Donations) from their fans. The platform features smooth animations, secure payment integration, and a powerful creator dashboard for managing profiles and contributions.
 
@@ -107,7 +107,7 @@ If you find a bug or want to suggest a new feature:
 1. Open an **Issue**
 2. Submit a **Pull Request**
 
-Your contributions help improve the project for everyone.
+Your contributions help improve the project for everyone...
 
 ---
 
